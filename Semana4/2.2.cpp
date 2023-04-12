@@ -7,15 +7,16 @@ bool esCaracter(char car){
     int val = static_cast <int> (car);
 
     if(val >= 65 && val <= 90 || val >= 97 && val <=122 ){
-        cout << "El caracter ingresado es una letra." << endl;
-    }else{
-        cout << "El caracter ingresado no es una letra." << endl;
+        return true;
     }
+        else
+    return false;
 }
-int main(){
-    char n;
+    int main(){
+    char car;
     cout << "Ingrese un caracter: ";
-    cin >> n;
-
+    cin >> car;
+    
+    cout << esCaracter(car)<<endl;
+    return 0;
 }
-
