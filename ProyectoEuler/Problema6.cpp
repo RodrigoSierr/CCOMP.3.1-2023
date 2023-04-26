@@ -11,7 +11,7 @@ int main() {
       suma1 = suma1 + i;
       suma2 = (suma2 + (i*i));
     }
-    sumafinal1 = suma1 * suma1;
+    sumafinal1 = suma1*suma1;
     cout << (sumafinal1 - suma2) << endl;
 
   return 0;
