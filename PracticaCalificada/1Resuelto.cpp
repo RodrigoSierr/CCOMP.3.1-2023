@@ -2,11 +2,11 @@
 using namespace std;
 
 bool esPalindromoRecursivo(int arr[], int inicio, int fin) {
-    // Caso base: Si el tamaño del arreglo es 0 o 1
+
     if (inicio >= fin) {
         return true;
     }
-    // Caso recursivo: Verificar si los elementos en los extremos son iguales
+
     if (arr[inicio] == arr[fin]) {
         // Verificar el siguiente par de elementos
         return esPalindromoRecursivo(arr, inicio + 1, fin - 1);
