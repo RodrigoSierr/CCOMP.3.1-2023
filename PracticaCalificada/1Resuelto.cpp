@@ -11,18 +11,18 @@ bool esPalindromoRecursivo(int arr[], int inicio, int fin) {
         // Verificar el siguiente par de elementos
         return esPalindromoRecursivo(arr, inicio + 1, fin - 1);
     }
-    // Si los elementos en los extremos no son iguales, no es un palíndromo
+
     return false;
 }
 
 bool esPalindromoIterativo(int arr[], int tam) {
-    // Verificar los elementos en los extremos del arreglo
+
     for (int i = 0, j = tam - 1; i < j; i++, j--) {
         if (arr[i] != arr[j]) {
             return false;
         }
     }
-    // Si todos los elementos coinciden, es un palíndromo
+
     return true;
 }
 
@@ -32,7 +32,6 @@ int main() {
     int arr2[] = {1, 2, 3, 4, 5};
     int tam2 = sizeof(arr2) / sizeof(arr2[0]);
 
-    // Verificar si los arreglos son palíndromos
     if (esPalindromoRecursivo(arr1, 0, tam1 - 1)) {
         cout << "El arreglo arr1 es un palindromo" << endl;
     } else {
